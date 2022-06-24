@@ -40,9 +40,16 @@ int main()
     for (int i = 0 ; i < N ; i++) {
         std::cin >> nums[i];
     }
+
     std::random_shuffle(nums, nums + N); // 시간복잡도가 O(N^2) 가 되는 경우를 만들지 않도록 shuffle
     ouun::quickSort(nums, 0, N - 1);
+    
+    std::cout << "{ ";
     for (int i = 0 ; i < N ; i++) {
-        std::cout << nums[i] << "\n";
+        std::cout << nums[i];
+        if (i < N - 1) {
+            std::cout << ", ";
+        }
     }
+    std::cout << " }\n";
 }
