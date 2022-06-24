@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/workspaces/algorithm/01_sort",
-      "program": "/workspaces/algorithm/01_sort/build/Debug/outDebug",
+      "cwd": "/workspaces/algorithm",
+      "program": "/workspaces/algorithm/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
