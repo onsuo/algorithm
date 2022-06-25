@@ -5,14 +5,12 @@
 00. 문제 ([Baekjoon Online Judge](https://www.acmicpc.net))
 
 01. 정렬 (Sort)
-
-    > *O(N\*N)*
     * 선택 정렬 (Selection Sort)
     * 버블 정렬 (Bubble Sort)
     * 삽입 정렬 (Insertion Sort)
-    
-    > *O(N\*logN) \~ O(N\*N)*
+        > *O(N\*N)*
     * 퀵 정렬 (Quick Sort)
+        > *O(N\*logN) \~ O(N\*N)*
 
 02. 스택 (Stack)
 
