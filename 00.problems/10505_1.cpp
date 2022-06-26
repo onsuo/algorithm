@@ -16,11 +16,13 @@
  * The first line of input contains the number of test cases T. 
  * The descriptions of the test cases follow:
  * Each test case consists of one line containing the number of wheels n (1 ≤ n ≤ 1000). 
- * Each of the following lines contain three integers x, y and r (−10,000 ≤ x, y ≤ 10,000; 1 ≤ r ≤ 10,000) where (x, y) denote the Cartesian coordinates of the wheel’s center and r is its radius.
+ * Each of the following lines contain three integers x, y and r (−10,000 ≤ x, y ≤ 10,000; 1 ≤ r ≤ 10,000) 
+ * where (x, y) denote the Cartesian coordinates of the wheel’s center and r is its radius.
  * 
  * -출력-
  * For each test case, output n lines, each describing the movement of one wheel, in the same order as in the input. 
- * For every wheel, output either p/q clockwise or p/q counterclockwise, where the irreducible fraction p/q is the number of wheel turns per minute. 
+ * For every wheel, output either p/q clockwise or p/q counterclockwise, 
+ * where the irreducible fraction p/q is the number of wheel turns per minute. 
  * If q is 1, output just p as an integer. 
  * If a wheel is standing still, output not moving
  */
