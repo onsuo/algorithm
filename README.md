@@ -15,6 +15,7 @@
 * 병합 정렬 (Merge Sort)
 * 힙 정렬 (Heap Sort)
 * 계수 정렬 (Counting Sort)
+    > *O(N\*logN)*
 
 #### 02. 자료구조
 
