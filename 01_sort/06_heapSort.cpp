@@ -20,7 +20,7 @@ int main()
         std::cin >> heap[i];
     }
     
-    // solution 1 : 최고위 root 로 최댓값 가져오기 -- 느림
+    // solution 1 : 최고위 root 로 최댓값 가져오기 -- O(N*N)
     for (int last = N - 1 ; last > 0 ; last--) {
         // 최댓값을 최고위 root 로 가져옴
         for (int root = (last + 1) / 2 - 1 ; root >= 0 ; root--) {
@@ -58,7 +58,7 @@ int main()
     }
     std::cout << " }\n";
 
-    // solution 2 : maximum heap 만들고 이용하기 -- 빠름
+    // solution 2 : maximum heap 만들고 이용하기 -- O(N*logN)
     // maximum heap (upstream), 초기 형성
     for (int leaf = 1 ; leaf < N ; leaf++) {
         int tleaf = leaf;
@@ -78,7 +78,7 @@ int main()
         // maximum heap (downstream), 이전의 붕괴된 maximum heap 을 교정하여 새로운 maximum heap 형성
         for (int root = 0, leaf = 1 ; leaf < last ; root = leaf) {
             leaf = 2 * root + 1;
-            if (leaf + 1 < last && heap[leaf + 1] > heap[leaf]) { // OutOfBound 유발 가능
+            if (leaf + 1 < last && heap[leaf + 1] > heap[leaf]) { // OutOfBound 유발 가능 (&& 이전을 우선적으로 연산 후 판단)
                 leaf++;
             }
             if (leaf < last && heap[root] < heap[leaf]) {
