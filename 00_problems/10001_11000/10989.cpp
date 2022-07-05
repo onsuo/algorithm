@@ -12,3 +12,27 @@
  * 첫째 줄부터 N개의 줄에 오름차순으로 정렬한 결과를 한 줄에 하나씩 출력한다.
  */
 
+#include <iostream>
+#include <array>
+
+int main()
+{
+    std::cin.tie(NULL);
+    std::ios_base::sync_with_stdio(false);
+
+    int N;
+    std::cin >> N;
+    std::array<int, 10001> count;
+    count.fill(0);
+    for (int i = 0 ; i < N ; i++) {
+        int temp;
+        std::cin >> temp;
+        count[temp]++;
+    }
+
+    for (int i = 1 ; i < 10001 ; i++) {
+        for (int j = 0 ; j < count[i] ; j++) {
+            std::cout << i << "\n";
+        }
+    }
+}
