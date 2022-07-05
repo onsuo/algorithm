@@ -20,9 +20,9 @@ int main()
         std::cin >> heap[i];
     }
     
-    // solution 1 : 최고위 root 로 최댓값 가져오기 -- O(N*N)
+    // solution 1 : root node 로 최댓값 가져오기 -- O(N*N)
     for (int last = N - 1 ; last > 0 ; last--) {
-        // 최댓값을 최고위 root 로 가져옴
+        // 최댓값을 root node 로 가져옴
         for (int root = (last + 1) / 2 - 1 ; root >= 0 ; root--) {
             int leaf = 2 * root + 1;
 
