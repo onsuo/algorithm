@@ -31,7 +31,7 @@
 * 깊이 우선 탐색 (Depth-First Search, DFS)
 * 합집합 찾기 (Union-Find)
 * 크루스칼 알고리즘 (Kruskal's Algorithm)
-* 이진트리의 구현과 순회 알고리즘
+* 이진트리의 구현과 순회 알고리즘 (Binary Tree Traversal)
 * 다이나믹 프로그래밍 (Dynamic Programming)
 * 에라토스테네스의 체 (Sieve of Eratosthenes)
 * 다익스트라 알고리즘 (Dijkstra's Algorithm)
