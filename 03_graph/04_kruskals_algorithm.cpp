@@ -41,22 +41,22 @@ int main()
 
     std::vector<Edge> edges;
     edges.reserve(e);
-    edges.push_back(Edge(0, 6, 12));
-    edges.push_back(Edge(0, 3, 28));
-    edges.push_back(Edge(0, 1, 67));
-    edges.push_back(Edge(0, 4, 17));
-    edges.push_back(Edge(1, 3, 24));
-    edges.push_back(Edge(1, 4, 62));
-    edges.push_back(Edge(2, 4, 20));
-    edges.push_back(Edge(2, 5, 37));
-    edges.push_back(Edge(3, 6, 13));
-    edges.push_back(Edge(4, 5, 45));
-    edges.push_back(Edge(4, 6, 73));
+    edges.push_back(Edge(1, 7, 12));
+    edges.push_back(Edge(1, 4, 28));
+    edges.push_back(Edge(1, 2, 67));
+    edges.push_back(Edge(1, 5, 17));
+    edges.push_back(Edge(2, 4, 24));
+    edges.push_back(Edge(2, 5, 62));
+    edges.push_back(Edge(3, 5, 20));
+    edges.push_back(Edge(3, 6, 37));
+    edges.push_back(Edge(4, 7, 13));
+    edges.push_back(Edge(5, 6, 45));
+    edges.push_back(Edge(5, 7, 73));
 
     std::sort(edges.begin(), edges.end());
     
-    int parent[n];
-    for (int i = 0; i < n; i++) {
+    int parent[n + 1];
+    for (int i = 1; i <= n; i++) {
         parent[i] = i;
     }
 
