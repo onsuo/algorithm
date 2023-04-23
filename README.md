@@ -20,10 +20,27 @@
 
 #### 02. 자료구조
 
-* 스택 (Stack)
-* 큐 (Queue)
-* 집합 (Set)
-* 맵 (Map)
+* 원시 자료구조 (Primitive Data Structure)
+* 혼합 자료구조 (Composite Data Structure)
+    * 배열 (Array)
+    * 구조체 (Struct)
+    * 클래스 (Class)
+    * 레코드 (Record)
+* 추상적 자료구조 (Abstract Data Structure)
+    * 리스트 (List)
+        * 연결 리스트 (Linked List)
+    * 스택 (Stack)
+    * 큐 (Queue)
+        * 환형 큐 (Circular Queues)
+    * 트리 (Tree)
+        * 이진트리 (Binary Tree)
+            * 이진검색트리 (Binary Search Tree)
+        * 트라이 (Trie)
+    * 그래프 (Graph)
+* 딕셔너리 자료구조 (Dictionaries)
+    * 해시 테이블 (Hash Table; Hash Map)
+    * 연관 배열 (Associative Array)
+    * 연관 리스트 (Associative List)
 
 #### 03. 그래프
 
